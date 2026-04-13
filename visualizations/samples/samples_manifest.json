@@ -67,23 +67,13 @@
       "slider_ready": true
     },
     {
-      "file": "sample_04_c0_none.jpg",
-      "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\train_1249.jpg",
-      "classes": [],
-      "num_classes": 0,
-      "objects": 0,
-      "slider_ready": false,
-      "annotated_file": null,
-      "annotation_file": null
-    },
-    {
-      "file": "sample_05_c1_crack.jpg",
-      "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\train_0660.jpg",
+      "file": "sample_04_c1_crack.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\train_1128.jpg",
       "classes": [
         "crack"
       ],
       "num_classes": 1,
-      "objects": 29,
+      "objects": 8,
       "image_size": {
         "width": 1280,
         "height": 720
@@ -95,11 +85,11 @@
       "annotation_mode": "mask",
       "annotation_format": "polygon",
       "annotated_file": null,
-      "annotation_file": "annotations/sample_05_c1_crack_annotation.polygons.json",
+      "annotation_file": "annotations/sample_04_c1_crack_annotation.polygons.json",
       "slider_ready": true
     },
     {
-      "file": "sample_06_c1_crack.jpg",
+      "file": "sample_05_c1_crack.jpg",
       "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\test_0005.jpg",
       "classes": [
         "crack"
@@ -117,17 +107,39 @@
       "annotation_mode": "mask",
       "annotation_format": "polygon",
       "annotated_file": null,
-      "annotation_file": "annotations/sample_06_c1_crack_annotation.polygons.json",
+      "annotation_file": "annotations/sample_05_c1_crack_annotation.polygons.json",
       "slider_ready": true
     },
     {
-      "file": "sample_07_c1_crack.jpg",
+      "file": "sample_06_c1_crack.jpg",
       "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\train_0457.jpg",
       "classes": [
         "crack"
       ],
       "num_classes": 1,
       "objects": 7,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
+      "annotation_file": "annotations/sample_06_c1_crack_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_07_c1_crack.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\train_0178.jpg",
+      "classes": [
+        "crack"
+      ],
+      "num_classes": 1,
+      "objects": 6,
       "image_size": {
         "width": 1280,
         "height": 720
@@ -166,28 +178,6 @@
     },
     {
       "file": "sample_09_c1_crack.jpg",
-      "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\train_1110.jpg",
-      "classes": [
-        "crack"
-      ],
-      "num_classes": 1,
-      "objects": 1,
-      "image_size": {
-        "width": 1280,
-        "height": 720
-      },
-      "resized_from": {
-        "width": 1920,
-        "height": 1080
-      },
-      "annotation_mode": "mask",
-      "annotation_format": "polygon",
-      "annotated_file": null,
-      "annotation_file": "annotations/sample_09_c1_crack_annotation.polygons.json",
-      "slider_ready": true
-    },
-    {
-      "file": "sample_10_c1_crack.jpg",
       "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\test_0016.jpg",
       "classes": [
         "crack"
@@ -205,10 +195,32 @@
       "annotation_mode": "mask",
       "annotation_format": "polygon",
       "annotated_file": null,
+      "annotation_file": "annotations/sample_09_c1_crack_annotation.polygons.json",
+      "slider_ready": true
+    },
+    {
+      "file": "sample_10_c1_crack.jpg",
+      "source": "D:/PhD/Datasets/segmentation/GAPS384/raw/images\\train_1241.jpg",
+      "classes": [
+        "crack"
+      ],
+      "num_classes": 1,
+      "objects": 13,
+      "image_size": {
+        "width": 1280,
+        "height": 720
+      },
+      "resized_from": {
+        "width": 1920,
+        "height": 1080
+      },
+      "annotation_mode": "mask",
+      "annotation_format": "polygon",
+      "annotated_file": null,
       "annotation_file": "annotations/sample_10_c1_crack_annotation.polygons.json",
       "slider_ready": true
     }
   ],
   "count": 10,
-  "slider_pairs": 9
+  "slider_pairs": 10
 }
