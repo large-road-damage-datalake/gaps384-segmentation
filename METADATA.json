@@ -5,7 +5,9 @@
     "name": "GAPs384",
     "short_name": "gaps384-seg",
     "description": "Segmentation packaging of GAPs384 from pavement-crack-detection, with pixel-level crack masks and top-down road-surface imagery.",
-    "year": 2017
+    "year": 2017,
+    "family_name": "GAPs",
+    "subset_name": "384"
   },
   "project_context": {
     "task": "segmentation",
