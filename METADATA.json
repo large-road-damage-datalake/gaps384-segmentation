@@ -7,7 +7,8 @@
     "description": "Segmentation packaging of GAPs384 from pavement-crack-detection, with pixel-level crack masks and top-down road-surface imagery.",
     "year": 2017,
     "family_name": "GAPs",
-    "subset_name": "384"
+    "subset_name": "384",
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
   },
   "project_context": {
     "task": "segmentation",
@@ -22,23 +23,20 @@
       "task_subtype": "semantic_segmentation"
     },
     "segmentation_type": "semantic_segmentation",
-    "task_subtype": "semantic_segmentation"
+    "task_subtype": "semantic_segmentation",
+    "family_name": "GAPs",
+    "subset_name": "384",
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
   },
   "imaging_setup": {
     "camera": "Road-surface inspection imaging setup",
     "camera_viewpoint": [
       "top-down"
     ],
-    "resolution": "1920x1080",
+    "resolution": "Primarily 1920x1080 in this local package",
     "lighting_conditions": "Outdoor pavement scenes with natural illumination variation",
     "capture_height_mm": "Not reported",
-    "geotagged": false,
-    "resolution_details": [
-      {
-        "resolution": "1920x1080",
-        "count": 404
-      }
-    ]
+    "geotagged": false
   },
   "annotation_schema": [
     {
