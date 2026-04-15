@@ -33,10 +33,16 @@
     "camera_viewpoint": [
       "top-down"
     ],
-    "resolution": "Primarily 1920x1080 in this local package",
+    "resolution": "1920x1080",
     "lighting_conditions": "Outdoor pavement scenes with natural illumination variation",
     "capture_height_mm": "Not reported",
-    "geotagged": false
+    "geotagged": false,
+    "resolution_details": [
+      {
+        "resolution": "1920x1080",
+        "count": 404
+      }
+    ]
   },
   "annotation_schema": [
     {
@@ -120,17 +126,17 @@
     },
     {
       "name": "Maximilian Sesselmann",
-      "affiliation": "Ilmenau University of Technology",
+      "affiliation": "LEHMANN + PARTNER GmbH",
       "role": "Dataset Creator"
     },
     {
       "name": "Dirk Ebersbach",
-      "affiliation": "Ilmenau University of Technology",
+      "affiliation": "LEHMANN + PARTNER GmbH",
       "role": "Dataset Creator"
     },
     {
       "name": "Ulrike Stoeckert",
-      "affiliation": "Ilmenau University of Technology",
+      "affiliation": "German Federal Road Research Institute (BASt)",
       "role": "Dataset Creator"
     },
     {
