@@ -26,7 +26,8 @@
     "task_subtype": "semantic_segmentation",
     "family_name": "GAPs",
     "subset_name": "384",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m).",
+    "label_taxonomy_version": "road_damage_v1"
   },
   "imaging_setup": {
     "camera": "Road-surface inspection imaging setup",
@@ -53,7 +54,9 @@
           "id": 1,
           "name": "crack",
           "description": "GAPs384 class: crack",
-          "color": "#294F71"
+          "color": "#294F71",
+          "canonical_name": "crack",
+          "instances": 3010
         }
       ]
     }
@@ -73,7 +76,7 @@
     "split": {
       "data": {
         "n_images": 404,
-        "percentage": 1.0,
+        "percentage": 1,
         "n_images_with_annotations": 382,
         "annotation_coverage": 0.9455,
         "dataset_size": "1.63 GB",
@@ -169,5 +172,31 @@
     "article_title": "How to Get Pavement Distress Detection Ready for Deep Learning? A Systematic Approach.",
     "journal": "2017 International Joint Conference on Neural Networks (IJCNN)",
     "year": 2017
+  },
+  "class_taxonomy": {
+    "version": "road_damage_v1",
+    "classes": [
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "is_damage_target": true,
+        "aliases": [
+          "crack",
+          "cracked"
+        ],
+        "source_labels": [
+          "crack"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      }
+    ],
+    "damage_types": [
+      "crack"
+    ],
+    "unresolved_labels": []
   }
 }
