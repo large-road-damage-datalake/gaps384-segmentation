@@ -8,7 +8,7 @@
     "year": 2017,
     "family_name": "GAPs",
     "subset_name": "384",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m)."
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (GAPs384, GAPsV2, and GAPs10m)."
   },
   "project_context": {
     "task": "segmentation",
@@ -22,12 +22,12 @@
       "primary_task": "segmentation",
       "task_subtype": "semantic_segmentation"
     },
+    "label_taxonomy_version": "road_damage_v2",
     "segmentation_type": "semantic_segmentation",
     "task_subtype": "semantic_segmentation",
     "family_name": "GAPs",
     "subset_name": "384",
-    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (for example 384, v2, and 10m).",
-    "label_taxonomy_version": "road_damage_v1"
+    "family_description": "GAPs is a German top-down pavement distress dataset family with segmentation labels across multiple subsets (GAPs384, GAPsV2, and GAPs10m)."
   },
   "imaging_setup": {
     "camera": "Road-surface inspection imaging setup",
@@ -43,6 +43,20 @@
         "resolution": "1920x1080",
         "count": 404
       }
+    ],
+    "resolution_by_country": [
+      {
+        "name": "Germany",
+        "resolutions": [
+          "1920x1080"
+        ],
+        "resolution_details": [
+          {
+            "resolution": "1920x1080",
+            "count": 404
+          }
+        ]
+      }
     ]
   },
   "annotation_schema": [
@@ -56,27 +70,58 @@
           "description": "GAPs384 class: crack",
           "color": "#294F71",
           "canonical_name": "crack",
-          "instances": 3010
+          "instances": 2648
         }
       ]
     }
   ],
+  "class_taxonomy": {
+    "version": "road_damage_v2",
+    "classes": [
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
+        "is_damage_target": true,
+        "aliases": [
+          "crack",
+          "cracked"
+        ],
+        "source_labels": [
+          "crack"
+        ],
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
+      }
+    ],
+    "damage_types": [
+      "crack"
+    ],
+    "unresolved_labels": []
+  },
   "statistics": {
     "n_images": 404,
-    "n_annotations": 3010,
+    "n_annotations": 2648,
     "n_images_with_annotations": 382,
-    "average_annotations_per_image": 7.4504950495049505,
+    "average_annotations_per_image": 6.554455445544554,
     "dataset_size": "1.63 GB",
     "dataset_size_bytes": 1747773152,
     "dataset_file_count": 1172,
     "image_format": "png_masks",
     "class_distribution": {
-      "crack": 3010
+      "crack": 2648
     },
     "split": {
       "data": {
         "n_images": 404,
-        "percentage": 1,
+        "percentage": 1.0,
         "n_images_with_annotations": 382,
         "annotation_coverage": 0.9455,
         "dataset_size": "1.63 GB",
@@ -172,36 +217,5 @@
     "article_title": "How to Get Pavement Distress Detection Ready for Deep Learning? A Systematic Approach.",
     "journal": "2017 International Joint Conference on Neural Networks (IJCNN)",
     "year": 2017
-  },
-  "class_taxonomy": {
-    "version": "road_damage_v2",
-    "classes": [
-      {
-        "canonical_name": "crack",
-        "display_name": "Crack",
-        "damage_family": "crack",
-        "damage_subtype": "generic",
-        "role": "damage_target",
-        "semantic_role": "damage",
-        "training_role": "target",
-        "status": "stable",
-        "is_damage_target": true,
-        "aliases": [
-          "crack",
-          "cracked"
-        ],
-        "source_labels": [
-          "crack"
-        ],
-        "taxonomy_source": "codebook",
-        "taxonomy_unresolved": false,
-        "mapping_type": "codebook-based",
-        "mapping_confidence": "high"
-      }
-    ],
-    "damage_types": [
-      "crack"
-    ],
-    "unresolved_labels": []
   }
 }

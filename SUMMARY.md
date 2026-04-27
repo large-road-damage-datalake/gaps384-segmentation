@@ -4,7 +4,7 @@
 - Source dataset: GAPs384
 - Task: segmentation
 - Image count: 404
-- Annotation count: 3010
+- Annotation count: 2648
 - Class setup: 1 (crack)
 
 Primary references:

@@ -6,7 +6,7 @@ GAPs384 is a task-specific segmentation package derived from the pavement-crack-
 
 - Task: segmentation
 - Images: 404
-- Annotations: 3010
+- Annotations: 2648
 - Classes: 1 (crack)
 - Annotation format: paired PNG masks
 
